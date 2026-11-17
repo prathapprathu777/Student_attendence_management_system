@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monthly Attendance Report</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><div class="container">
+
+    <div class="header-bar">
+
+        <h1 class="report-heading">
+            Monthly Attendance Report
+        </h1>
+
+        <button id="back-btn">
+            Back to Dashboard
+        </button>
+
+    </div>
+
+
+    <!-- SELECT MONTH -->
+
+    <div class="card">
+
+        <h2>Select Month</h2>
+
+        <input
+            type="month"
+            id="report-month"
+        >
+
+        <button id="view-report">
+            View Report
+        </button>
+
+    </div>
+
+
+    <!-- MONTHLY REPORT TABLE -->
+
+    <div class="card">
+
+        <h2>Student Attendance Percentage</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Roll No</th>
+
+                        <th>Student Name</th>
+
+                        <th>Present Days</th>
+
+                        <th>Absent Days</th>
+
+                        <th>Total Days</th>
+
+                        <th>Attendance %</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="monthly-list">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <button id="logout-report">
+        Logout
+    </button>
+
+</div>
+
+
+<script src="report.js"></script>
+
+</body></html>

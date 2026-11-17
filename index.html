@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Attendance Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><!-- ADMIN LOGIN -->
+
+<div id="login-container" class="container">
+
+    <div class="card login-card">
+
+        <h1>Student Attendance System</h1>
+
+        <h2>Admin Login</h2>
+
+        <form id="login-form">
+
+            <input
+                type="text"
+                id="admin-username"
+                placeholder="Enter Admin Username"
+                required
+            >
+
+            <input
+                type="password"
+                id="admin-password"
+                placeholder="Enter Admin Password"
+                required
+            >
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p id="login-error" class="error-msg" style="display:none;">
+            Invalid username or password.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- MAIN APPLICATION -->
+
+<div id="app-container" class="container" style="display:none;">
+
+    <!-- HEADER -->
+
+    <div class="header-bar">
+
+        <h1>Student Attendance Management System</h1>
+
+        <button id="logout-btn" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+
+    <!-- ADD STUDENT -->
+
+    <div class="card">
+
+        <h2>Add Student</h2>
+
+        <form id="student-form">
+
+            <input
+                type="text"
+                id="roll-no"
+                placeholder="Enter Roll Number"
+                required
+            >
+
+            <input
+                type="text"
+                id="student-name"
+                placeholder="Enter Student Name"
+                required
+            >
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ATTENDANCE DATE -->
+
+    <div class="card">
+
+        <h2>Mark Attendance</h2>
+
+        <label for="attendance-date">
+            Select Attendance Date:
+        </label>
+
+        <input type="date" id="attendance-date">
+
+    </div>
+
+
+    <!-- DAILY ATTENDANCE -->
+
+    <div class="card">
+
+        <h2>Daily Attendance</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Roll No</th>
+
+                        <th>Student Name</th>
+
+                        <th>Status</th>
+
+                        <th>Date</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="student-list">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <button id="submit-attendance" class="submit-attendance">
+            Submit Attendance
+        </button>
+
+
+        <!-- MONTHLY REPORT PAGE BUTTON -->
+
+        <button id="monthly-percentage-btn" class="monthly-btn">
+            View Monthly Attendance Report
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body></html>
